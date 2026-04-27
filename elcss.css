@@ -1,4 +1,12 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
 img{
     width: 300px;
     height: auto;
 }
+#resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }

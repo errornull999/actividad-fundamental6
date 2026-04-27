@@ -10,3 +10,27 @@ function mostrarmemealeatorio() {
     let memealeatorio = memes[Math.floor(Math.random() * memes.length)];
     document.querySelector("#meme").innerHTML = `<img src="${memealeatorio}" alt="Meme Aleatorio">`;
 }
+        let siButton = document.getElementById("sibutton");
+        let noButton = document.getElementById("noButton");
+        let resultado = document.getElementById("resultado");
+
+        siButton.addEventListener("click", () => {
+            resultado.textContent = "¡Gracias! 😁👍";
+            resultado.style.color = "green";
+        });
+
+        noButton.addEventListener("click", () => {
+            resultado.textContent = "Ok 😢👎";
+            resultado.style.color = "blue";
+        });
+document.getElementById("avisoBtn").addEventListener("click", () => {
+            Swal.fire("Aviso", "Estas avisado", "info");
+        });
+
+        document.getElementById("errorBtn").addEventListener("click", () => {
+            Swal.fire("Error", "Este mensaje solo se debería mostrar en un error", "error");
+        });
+
+        document.getElementById("atencionBtn").addEventListener("click", () => {
+            Swal.fire("Atención", "Gracias por su atención", "warning");
+        });
